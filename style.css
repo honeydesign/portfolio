@@ -1,0 +1,501 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container-one {
+    background-color: #2D2E32;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+@media(max-width:700px) {
+    .container-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main-headingOne {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: white;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+.main-headingTwo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: white;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white
+    }
+}
+
+#button {
+    background: #24b26b;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#button a {
+    text-decoration: none;
+    color: white;
+}
+
+.picture-heading {
+    position: relative;
+}
+
+.box {
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    z-index: 1;
+}
+
+.box-one {
+    background-color: rgba(100, 244, 171, 0.43);
+}
+
+.box-two {
+    background-color: rgba(100, 244, 171, 0.14);
+    transform: rotateZ(-20deg);
+}
+
+.picture {
+    position: relative;
+    z-index: 2;
+}
+
+.container-two {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #24b26b;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.container-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90px;
+}
+
+.boxes {
+    width: 300px;
+    height: 300px;
+    background: #2D2E32;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform .2s ease-in-out;
+}
+
+.boxes:hover {
+    background-color: #24b26b;
+    transform: scale(1.2);
+}
+
+.boxes>.dot {
+    background-color: #ffffff
+}
+
+.dot {
+    border: 7px solid rgba(100, 244, 171, 0.43);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.boxes h3 {
+    color: white;
+}
+
+.boxes p {
+    color: white;
+    text-align: center;
+    margin-top: -40px;
+    padding: 30px;
+}
+
+.container-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: #2D2E32;
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 2rem;
+    /* background-color: black; */
+}
+
+.section-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 150px;
+}
+
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.sectionOne h4 {
+    color: #24b26b;
+}
+
+.sectionOne h3 {
+    color: white;
+}
+
+.sectionOne p {
+    color: white;
+}
+
+.sectionTwo {
+    position: relative;
+    width: 100%;
+}
+
+.othersection {
+    position: relative;
+    width: 100%;
+}
+
+.othersection .images {
+    position: absolute;
+    top: -10rem;
+    z-index: 10;
+}
+
+.othersection .imgOne {
+    z-index: 11;
+}
+
+.othersection .imgTwo {
+    transform: rotateZ(-5deg);
+}
+
+.othersection .imgThree {
+    transform: rotateZ(-5deg);
+}
+
+.sectionTwo .img {
+    position: absolute;
+    top: -10rem;
+    z-index: 10;
+}
+
+.sectionTwo .imgfour {
+    z-index: 11;
+}
+
+.sectionTwo .imgfive {
+    transform: rotateZ(-5deg);
+}
+
+.sectionTwo .imgsix {
+    transform: rotateZ(-5deg);
+}
+
+.section-three {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    width: 85%;
+    height: 100px;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 21.25%;
+}
+
+.square h2 {
+    color: #24b26b;
+    text-align: center;
+}
+
+.square p {
+    color: white;
+    text-align: center;
+}
+
+.squareone {
+    border-right: 2px solid #24b26b;
+}
+
+.squaretwo {
+    border-right: 2px solid #24b26b;
+}
+
+.squarethree {
+    border-right: 2px solid #24b26b;
+}
+
+.container-four {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.two-section>* {
+    padding: 1em;
+}
+
+@media(min-width: 700px) {
+    .two-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .two-section>* {
+        padding: 2em 2em;
+    }
+}
+
+.sideTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+h3,
+ul {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid gold;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+form label {
+    display: block;
+}
+
+form p {
+    margin: 0;
+}
+
+.sideOne .full-width {
+    grid-column: 1/3;
+}
+
+button,
+input,
+textarea {
+    padding: 1em;
+}
+
+button {
+    background-color: #24b26b;
+    width: 100%;
+    border: 0;
+}
+
+button:hover,
+button:focus {
+    background-color: green;
+    outline: o;
+}
+
+.socials ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials ul li {
+    list-style: none;
+}
+
+.socials ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.socials ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.socials ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.socials ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+.socials ul li a:hover:before {
+    top: 0;
+}
+
+.socials ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.socials ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+.socials ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+.socials ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
